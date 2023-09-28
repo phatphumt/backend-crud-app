@@ -35,3 +35,5 @@ app.use(cors(corsO));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api', appRouter);
+
+module.exports = app;
