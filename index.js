@@ -24,8 +24,7 @@ const listen = (port) => {
 const dbURI = process.env.dbURI;
 
 connect(dbURI)
-	.then((res) => {
-		console.clear();
+	.then(() => {
 		console.log('mongo connected');
 		listen(process.env.PORT);
 	})
