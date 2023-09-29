@@ -29,7 +29,7 @@ const dbURI =
 connect(dbURI)
 	.then(() => {
 		console.log('mongo connected');
-		listen(process.env.PORT);
+		listen(process.env.PORT || 4000);
 	})
 	.catch((err) => console.log(err));
 
